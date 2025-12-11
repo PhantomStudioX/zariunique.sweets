@@ -1,1 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: #333;
+}
 
+header {
+  padding: 20px;
+  text-align: center;
+  background: #FFC6DA;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #FF8FB4;
+  color: white;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: white;
+  color: #FF8FB4;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.preview {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border: 2px solid #FFC6DA;
+  border-radius: 12px;
+  padding: 15px;
+  width: 200px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #FFC6DA;
+  margin-top: 40px;
+}
