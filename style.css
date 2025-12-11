@@ -22,8 +22,11 @@ header {
 }
 
 .logo {
-  height: 45px;
-  width: auto;
+  height: 55px;
+  width: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FF8FB4; /* optional cute pink border */
 }
 
 header h1 {
