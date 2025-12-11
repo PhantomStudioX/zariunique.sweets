@@ -11,32 +11,43 @@ header {
   padding: 20px;
   background: #FFC6DA;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* title above nav on ALL screens */
   align-items: center;
+  text-align: center;
+  gap: 10px;
 }
 
 .logo-container {
   display: flex;
+  flex-direction: column; /* logo above title */
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
+/* MAKE LOGO CIRCULAR */
 .logo {
-  height: 55px;
-  width: 55px;
+  height: 70px;
+  width: 70px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #FF8FB4; /* optional cute pink border */
+  border: 3px solid #FF8FB4;
+  overflow: hidden; /* forces perfect circle */
 }
 
+/* TITLE */
 header h1 {
   margin: 0;
   font-size: 24px;
   color: #333;
 }
 
+/* NAVIGATION */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
 nav a {
-  margin-left: 20px;
   text-decoration: none;
   color: #333;
   font-weight: 500;
