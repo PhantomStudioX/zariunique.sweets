@@ -11,7 +11,7 @@ header {
   padding: 20px;
   background: #FFC6DA;
   display: flex;
-  flex-direction: column; /* title above nav on ALL screens */
+  flex-direction: column; /* stacked layout on ALL screens */
   align-items: center;
   text-align: center;
   gap: 10px;
@@ -24,14 +24,14 @@ header {
   gap: 5px;
 }
 
-/* MAKE LOGO CIRCULAR */
+/* LOGO - CIRCULAR */
 .logo {
   height: 70px;
   width: 70px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #FF8FB4;
-  overflow: hidden; /* forces perfect circle */
+  overflow: hidden;
 }
 
 /* TITLE */
