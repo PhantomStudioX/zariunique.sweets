@@ -11,66 +11,59 @@ header {
   padding: 20px;
   background: #FFC6DA;
   display: flex;
-  flex-direction: column; /* stacked layout on ALL screens */
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
   gap: 10px;
 }
 
 /* LOGO AREA */
 .logo-container {
   display: flex;
-  flex-direction: column; /* logo above title */
-  flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
-/* LOGO - CIRCULAR */
+/* LOGO */
 .logo {
   height: 70px;
   width: 70px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #FF8FB4;
-  overflow: hidden;
 }
 
 /* TITLE */
 header h1 {
   margin: 0;
-  font-size: 24px;
-  color: #333;
+  font-size: 22px;
 }
 
 /* NAVIGATION */
-nav {
+.main-nav {
   display: flex;
-  gap: 20px;
-  gap: 12px;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 10px;
 }
 
-nav a {
-/* CATEGORY BUTTONS IN NAV */
+/* NAV BUTTONS */
 .btn-nav {
-  padding: 8px 15px;
+  padding: 6px 12px;
   background: white;
-  color: #FF8FB4;
-  border-radius: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-weight: 600;
   border: 2px solid #FF8FB4;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
   transition: 0.2s ease;
 }
 
-nav a.active {
-  border-bottom: 2px solid #FF8FB4;
 .btn-nav:hover {
+  background: #FF8FB4;
+  color: white;
+}
+
+.btn-nav.active {
   background: #FF8FB4;
   color: white;
 }
@@ -78,24 +71,42 @@ nav a.active {
 /* HERO SECTION */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
   background: #FF8FB4;
   color: white;
 }
 
+.hero h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* CATEGORY BUTTONS */
+.category-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
 .btn {
-  padding: 12px 25px;
+  padding: 10px 20px;
   background: white;
   color: #FF8FB4;
-  border-radius: 25px;
+  border-radius: 22px;
   text-decoration: none;
   font-weight: 600;
 }
 
-/* PREVIEW SECTION */
+/* PREVIEW */
 .preview {
   padding: 40px 20px;
+}
+
+.center-title {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .product-grid {
@@ -124,28 +135,6 @@ nav a.active {
   border-radius: 10px;
 }
 
-/* PRODUCTS PAGE */
-.product-page {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.product-page h2 {
-  color: #FF8FB4;
-  font-size: 28px;
-}
-
-.product-page .sub {
-  margin-top: -10px;
-  color: #555;
-  font-size: 16px;
-}
-
-.product-page .product-grid {
-  margin-top: 30px;
-  gap: 25px;
-}
-
 .card h4 {
   margin-bottom: 5px;
 }
@@ -155,11 +144,16 @@ nav a.active {
   color: #444;
 }
 
+/* PRODUCT PAGE */
+.product-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
   background: #FFC6DA;
   margin-top: 40px;
-}
 }
