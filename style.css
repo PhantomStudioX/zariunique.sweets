@@ -63,6 +63,7 @@ header h1 {
   color: white;
 }
 
+/* ACTIVE PAGE */
 .btn-nav.active {
   background: #FF8FB4;
   color: white;
