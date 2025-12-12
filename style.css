@@ -1,117 +1,131 @@
-/* GLOBAL */
+/* Global */
+
 body {
-  margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #ffffff;
+  margin: 0;
+  background-color: #ffffff;
   color: #333;
 }
 
-/* HEADER */
-header {
-  padding: 20px;
-  background: #FFC6DA;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
+h1, h2, h3 {
+  margin: 0;
 }
 
-.logo-container {
+/* Header */
+
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 5px;
+  padding: 15px 20px;
+  background-color: #ffe4f2;
+  border-bottom: 2px solid #ffb6d9;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo {
-  height: 70px;
-  width: 70px;
-  object-fit: cover;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
-  border: 3px solid #FF8FB4;
+  object-fit: cover;
 }
 
-/* NAV BUTTONS */
-nav {
-  display: flex;
-  flex-wrap: wrap;       /* allows 2 rows */
-  justify-content: center;
-  gap: 10px;
-  max-width: 320px;       /* forces 2 rows on small screens */
+.brand-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d63384;
 }
 
-.btn-nav {
-  padding: 8px 15px;
-  background: white;
-  color: #FF8FB4;
-  border-radius: 20px;
+/* Home Button */
+
+.home-btn {
+  background-color: #d63384;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 30px;
   text-decoration: none;
-  font-weight: 600;
-  border: 2px solid #FF8FB4;
-  transition: 0.2s ease;
+  font-size: 14px;
+  transition: 0.2s;
 }
 
-.btn-nav:hover {
-  background: #FF8FB4;
-  color: white;
+.home-btn:hover {
+  background-color: #b0276b;
 }
 
-/* HERO */
-.hero {
+/* Tagline */
+
+.tagline {
   text-align: center;
-  padding: 80px 20px;
-  background: #FF8FB4;
-  color: white;
+  font-size: 20px; /* smaller */
+  color: #d63384;
+  margin-top: 20px;
 }
 
-/* PRODUCT GRID */
-.product-grid {
+/* Category Buttons */
+
+.category-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: white;
-  border: 2px solid #FFC6DA;
-  border-radius: 12px;
+  flex-wrap: nowrap; /* 1 row */
+  gap: 8px;
   padding: 15px;
-  width: 200px;
-  transition: 0.2s ease;
+  overflow-x: auto;
 }
 
-.card img {
+.category-buttons button {
+  background-color: #ffb6d9;
+  border: none;
+  padding: 10px 14px; /* smaller */
+  border-radius: 25px;
+  font-size: 13px;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.category-buttons button:hover {
+  background-color: #d63384;
+}
+
+/* Featured Treats */
+
+.featured-title {
+  text-align: center; /* centered */
+  margin-top: 30px;
+  color: #d63384;
+  font-size: 22px;
+}
+
+/* Product Grid */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  text-align: center;
+  background: #fff0f6;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ffd1e8;
+}
+
+.product-card img {
   width: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(255, 143, 180, 0.3);
-}
-
-/* PRODUCT PAGE */
-.product-page {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.product-page h2 {
-  color: #FF8FB4;
-  font-size: 28px;
-}
-
-.product-page .sub {
-  margin-top: -10px;
-  color: #555;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #FFC6DA;
-  margin-top: 40px;
+.product-card h3 {
+  color: #d63384;
+  margin-top: 10px;
 }
