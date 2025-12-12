@@ -17,7 +17,6 @@ header {
   gap: 10px;
 }
 
-/* LOGO AREA */
 .logo-container {
   display: flex;
   flex-direction: column;
@@ -33,21 +32,15 @@ header {
   border: 3px solid #FF8FB4;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 24px;
-  color: #333;
-}
-
-/* NAVIGATION */
+/* NAV BUTTONS */
 nav {
   display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+  flex-wrap: wrap;       /* allows 2 rows */
   justify-content: center;
+  gap: 10px;
+  max-width: 320px;       /* forces 2 rows on small screens */
 }
 
-/* CATEGORY BUTTONS IN NAV */
 .btn-nav {
   padding: 8px 15px;
   background: white;
@@ -64,7 +57,7 @@ nav {
   color: white;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   text-align: center;
   padding: 80px 20px;
@@ -72,12 +65,7 @@ nav {
   color: white;
 }
 
-/* PREVIEW SECTION */
-.preview {
-  padding: 40px 20px;
-  text-align: center;
-}
-
+/* PRODUCT GRID */
 .product-grid {
   display: flex;
   justify-content: center;
@@ -94,17 +82,17 @@ nav {
   transition: 0.2s ease;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(255, 143, 180, 0.3);
-}
-
 .card img {
   width: 100%;
   border-radius: 10px;
 }
 
-/* PRODUCTS PAGE */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 143, 180, 0.3);
+}
+
+/* PRODUCT PAGE */
 .product-page {
   padding: 40px 20px;
   text-align: center;
@@ -118,21 +106,6 @@ nav {
 .product-page .sub {
   margin-top: -10px;
   color: #555;
-  font-size: 16px;
-}
-
-.product-page .product-grid {
-  margin-top: 30px;
-  gap: 25px;
-}
-
-.card h4 {
-  margin-bottom: 5px;
-}
-
-.card p {
-  margin-top: 0;
-  color: #444;
 }
 
 /* FOOTER */
