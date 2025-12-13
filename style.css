@@ -144,7 +144,7 @@ header h1 {
 /* IMAGE MATCHES VIDEO SIZE */
 .card img {
   width: 100%;
-  height: 150px;
+  height: 170px;
   object-fit: cover;
   border-radius: 10px;
 }
