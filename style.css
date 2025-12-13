@@ -120,7 +120,7 @@ header h1 {
 /* MEDIA (VIDEO) */
 .product-video {
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
   border-radius: 10px;
   display: block;
@@ -148,7 +148,7 @@ header h1 {
 /* IMAGE */
 .card img {
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
   border-radius: 10px;
 }
