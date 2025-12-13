@@ -21,6 +21,27 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative; /* needed for mistletoe */
+}
+
+/* MISTLETOE */
+.logo-container::after {
+  content: "🌿🎀";
+  position: absolute;
+  top: -28px;
+  left: 25px;
+  font-size: 26px;
+  transform-origin: top center;
+  animation: mistletoeSway 4s ease-in-out infinite;
+}
+
+/* Gentle sway animation */
+@keyframes mistletoeSway {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(4deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-4deg); }
+  100% { transform: rotate(0deg); }
 }
 
 /* LOGO */
@@ -137,7 +158,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;   /* ✅ FIX: keeps name & price centered */
+  text-align: center;
   transition: 0.2s ease;
 }
 
