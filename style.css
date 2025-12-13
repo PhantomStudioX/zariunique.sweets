@@ -1,7 +1,7 @@
 /* GLOBAL */
 body {
   margin: 0;
-  font-family: 'Playfair Display', serif;    /* 'poppins', sans-serif;  */
+  font-family: 'Playfair Display', serif;
   background: #ffffff;
   color: #333;
 }
@@ -131,12 +131,13 @@ header h1 {
   background: white;
   border: 2px solid #FFC6DA;
   border-radius: 14px;
-  padding: 22px;          /* ⬆ more inner space */
+  padding: 22px;
   width: 240px;
-  min-height: 360px;      /* ⬆ MAKES CARD LONGER */
+  min-height: 360px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* spreads content nicely */
+  justify-content: space-between;
+  text-align: center;   /* ✅ FIX: keeps name & price centered */
   transition: 0.2s ease;
 }
 
