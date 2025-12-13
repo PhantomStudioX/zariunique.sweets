@@ -120,7 +120,7 @@ header h1 {
 /* MEDIA (VIDEO) */
 .product-video {
   width: 100%;
-  height: 180px;        /* ⬆ bigger */
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
   display: block;
@@ -131,8 +131,12 @@ header h1 {
   background: white;
   border: 2px solid #FFC6DA;
   border-radius: 14px;
-  padding: 18px;        /* ⬆ more space */
-  width: 240px;         /* ⬆ bigger card */
+  padding: 22px;          /* ⬆ more inner space */
+  width: 240px;
+  min-height: 360px;      /* ⬆ MAKES CARD LONGER */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* spreads content nicely */
   transition: 0.2s ease;
 }
 
@@ -144,19 +148,20 @@ header h1 {
 /* IMAGE */
 .card img {
   width: 100%;
-  height: 180px;        /* ⬆ bigger */
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .card h4 {
-  margin-bottom: 6px;
+  margin: 12px 0 6px;
   font-size: 16px;
 }
 
 .card p {
-  margin-top: 0;
+  margin: 0;
   color: #444;
+  font-weight: 500;
 }
 
 /* PRODUCT PAGE */
