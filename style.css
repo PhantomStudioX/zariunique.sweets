@@ -168,7 +168,7 @@ body.christmas .snow-container {
 .snow-container span {
   position: absolute;
   top: -10%;
-  font-size: 22px;
+  font-size: 10px;
   animation: fall linear infinite;
   opacity: 0.8;
 }
