@@ -108,6 +108,12 @@ header h1 {
   display: block;
 }
 
+/* PRODUCT PAGE HEADINGS FIX */
+.product-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+
 /* PRODUCT CARD — NORMAL MODE */
 .card {
   background: white;
