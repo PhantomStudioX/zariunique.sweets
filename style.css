@@ -14,7 +14,6 @@ header {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  position: relative;
 }
 
 /* LOGO AREA */
@@ -22,7 +21,6 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  position: relative;
 }
 
 /* LOGO */
@@ -32,26 +30,6 @@ header {
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #FF8FB4;
-  position: relative;
-  z-index: 2;
-}
-
-/* 🎄 MISTLETOE */
-.mistletoe {
-  position: absolute;
-  left: -38px;        /* hangs off LEFT side */
-  top: -25px;
-  width: 55px;
-  z-index: 3;
-  transform-origin: top center;
-  animation: mistletoe-sway 4s ease-in-out infinite;
-}
-
-/* Gentle sway animation */
-@keyframes mistletoe-sway {
-  0%   { transform: rotate(-4deg); }
-  50%  { transform: rotate(4deg); }
-  100% { transform: rotate(-4deg); }
 }
 
 /* TITLE */
@@ -130,7 +108,7 @@ header h1 {
   display: block;
 }
 
-/* 🎄 PRODUCT CARD WITH CHRISTMAS BORDER */
+/* PRODUCT CARD */
 .card {
   background: white;
   border-radius: 18px;
@@ -141,10 +119,8 @@ header h1 {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  position: relative;
   transition: 0.2s ease;
 
-  /* Christmas border image */
   border: 18px solid transparent;
   border-image: url("images/card-border.png") 60 round;
 }
@@ -161,7 +137,7 @@ header h1 {
 
 .card p {
   margin: 0;
-  font-weight: 700; /* bold price properly */
+  font-weight: 700;
   color: #444;
 }
 
@@ -199,7 +175,7 @@ header h1 {
 
 @keyframes fall {
   from { transform: translateY(0); }
-  to   { transform: translateY(110vh); }
+  to { transform: translateY(110vh); }
 }
 
 /* FOOTER */
