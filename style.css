@@ -213,3 +213,8 @@ footer {
   background: #FFC6DA;
   margin-top: 40px;
 }
+
+body.christmas .snow-container {
+  display: block !important;
+  background: rgba(255, 0, 0, 0.05);
+}
