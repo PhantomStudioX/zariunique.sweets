@@ -14,6 +14,8 @@ header {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  position: relative;
+  z-index: 10;
 }
 
 /* LOGO AREA */
@@ -74,6 +76,8 @@ header h1 {
   padding: 60px 20px;
   background: #FF8FB4;
   color: white;
+  position: relative;
+  z-index: 5;
 }
 
 .hero h2 {
@@ -84,6 +88,8 @@ header h1 {
 /* PREVIEW */
 .preview {
   padding: 40px 20px;
+  position: relative;
+  z-index: 5;
 }
 
 .center-title {
@@ -112,6 +118,8 @@ header h1 {
 .product-page {
   padding: 40px 20px;
   text-align: center;
+  position: relative;
+  z-index: 5;
 }
 
 .product-page h2,
@@ -131,7 +139,6 @@ header h1 {
   justify-content: space-between;
   text-align: center;
   transition: 0.2s ease;
-
   border: 3px solid #FF8FB4;
 }
 
@@ -157,14 +164,14 @@ body.christmas .card {
   color: #444;
 }
 
-/* FALLING EFFECTS — OFF BY DEFAULT */
+/* 🎄 FALLING EFFECTS LAYER */
 .snow-container {
   display: none;
   position: fixed;
   inset: 0;
   pointer-events: none;
   overflow: hidden;
-  z-index: 1;
+  z-index: 9999; /* 🔥 THIS WAS THE BLOCKER */
 }
 
 /* 🎄 EFFECTS ON */
@@ -172,21 +179,25 @@ body.christmas .snow-container {
   display: block;
 }
 
+/* FALLING ITEMS */
 .snow-container span {
   position: absolute;
   top: -10%;
   font-size: 18px;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 /* 🎂 DEFAULT FALL */
 body.christmas .snow-container span {
-  animation: fall linear infinite;
+  animation-name: fall;
+  animation-duration: 12s; /* required */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 /* 🧁 CUPCAKES PAGE — sprinkle drift */
 .cupcakes-page.christmas .snow-container span {
-  animation: drift linear infinite;
+  animation-name: drift;
   font-size: 14px;
 }
 
@@ -212,9 +223,6 @@ footer {
   padding: 20px;
   background: #FFC6DA;
   margin-top: 40px;
-}
-
-body.christmas .snow-container {
-  display: block !important;
-  background: rgba(255, 0, 0, 0.05);
+  position: relative;
+  z-index: 5;
 }
