@@ -2,7 +2,7 @@
    🎄 CHRISTMAS MODE TOGGLE
    ========================= */
 :root {
-  --christmas-mode: on; /* change to 'on' to enable Christmas */
+  --christmas-mode: off; /* change to 'on' to enable Christmas */
 }
 
 /* GLOBAL */
