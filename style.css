@@ -121,7 +121,6 @@ header h1 {
   text-align: center;
   transition: 0.2s ease;
 
-  /* normal border */
   border: 3px solid #FF8FB4;
 }
 
@@ -147,20 +146,17 @@ body.christmas .card {
   color: #444;
 }
 
-/* FALLING CANDY — OFF BY DEFAULT */
+/* FALLING EFFECTS — OFF BY DEFAULT */
 .snow-container {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   pointer-events: none;
   overflow: hidden;
   z-index: 1;
 }
 
-/* 🎄 FALLING CANDY ON */
+/* 🎄 EFFECTS ON */
 body.christmas .snow-container {
   display: block;
 }
@@ -168,16 +164,21 @@ body.christmas .snow-container {
 .snow-container span {
   position: absolute;
   top: -10%;
-  font-size: 22px;
-  animation: fall linear infinite;
+  font-size: 18px;
   opacity: 0.8;
 }
 
-/* IMAGE EFFECTS */
-.snow-container img {
-  width: 20px;
-  height: auto;
+/* 🎂 DEFAULT FALL */
+body.christmas .snow-container span {
+  animation: fall linear infinite;
 }
+
+/* 🧁 CUPCAKES PAGE — sprinkle drift */
+.cupcakes-page.christmas .snow-container span {
+  animation: drift linear infinite;
+  font-size: 14px;
+}
+
 .snow-container span:nth-child(1) { left: 10%; animation-duration: 10s; }
 .snow-container span:nth-child(2) { left: 30%; animation-duration: 14s; }
 .snow-container span:nth-child(3) { left: 50%; animation-duration: 12s; }
@@ -186,7 +187,12 @@ body.christmas .snow-container {
 
 @keyframes fall {
   from { transform: translateY(0); }
-  to { transform: translateY(110vh); }
+  to   { transform: translateY(110vh); }
+}
+
+@keyframes drift {
+  from { transform: translate(-15px, 0); }
+  to   { transform: translate(15px, 110vh); }
 }
 
 /* FOOTER */
