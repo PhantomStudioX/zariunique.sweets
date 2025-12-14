@@ -115,7 +115,7 @@ header h1 {
   display: block;
 }
 
-/* PRODUCT CARD */
+/* PRODUCT CARD (DEFAULT — NON-CHRISTMAS) */
 .card {
   background: white;
   border-radius: 18px;
@@ -128,6 +128,11 @@ header h1 {
   text-align: center;
   transition: 0.2s ease;
 
+  border: 3px solid #FF8FB4;
+}
+
+/* 🎄 CHRISTMAS CARD BORDER */
+:root[style*="--christmas-mode: on"] .card {
   border: 18px solid transparent;
   border-image: url("images/card-border.png") 60 round;
 }
@@ -167,7 +172,7 @@ header h1 {
   z-index: 1;
 }
 
-/* 🎄 ENABLE FALLING CANDY WHEN CHRISTMAS MODE IS ON */
+/* 🎄 ENABLE FALLING CANDY */
 :root[style*="--christmas-mode: on"] .snow-container {
   display: block;
 }
