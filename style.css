@@ -1,3 +1,10 @@
+/* =========================
+   🎄 CHRISTMAS MODE TOGGLE
+   ========================= */
+:root {
+  --christmas-mode: off; /* change to 'on' to enable Christmas */
+}
+
 /* GLOBAL */
 body {
   margin: 0;
@@ -147,8 +154,9 @@ header h1 {
   text-align: center;
 }
 
-/* FALLING CANDY */
+/* FALLING CANDY (OFF BY DEFAULT) */
 .snow-container {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -157,6 +165,11 @@ header h1 {
   pointer-events: none;
   overflow: hidden;
   z-index: 1;
+}
+
+/* 🎄 ENABLE FALLING CANDY WHEN CHRISTMAS MODE IS ON */
+:root[style*="--christmas-mode: on"] .snow-container {
+  display: block;
 }
 
 .snow-container span {
