@@ -114,6 +114,11 @@ header h1 {
   text-align: center;
 }
 
+.product-page h2,
+.product-page .sub {
+  text-align: center;
+}
+
 /* PRODUCT CARD — NORMAL MODE */
 .card {
   background: white;
