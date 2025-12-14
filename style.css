@@ -168,11 +168,16 @@ body.christmas .snow-container {
 .snow-container span {
   position: absolute;
   top: -10%;
-  font-size: 10px;
+  font-size: 22px;
   animation: fall linear infinite;
   opacity: 0.8;
 }
 
+/* IMAGE EFFECTS */
+.snow-container img {
+  width: 20px;
+  height: auto;
+}
 .snow-container span:nth-child(1) { left: 10%; animation-duration: 10s; }
 .snow-container span:nth-child(2) { left: 30%; animation-duration: 14s; }
 .snow-container span:nth-child(3) { left: 50%; animation-duration: 12s; }
