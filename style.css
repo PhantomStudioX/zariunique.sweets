@@ -21,7 +21,13 @@ header {
 .menu-btn {
   font-size: 26px;
   cursor: pointer;
-  display: inline-block;
+  padding: 10px 14px;
+  background: white;
+  border-radius: 14px;
+  border: 2px solid #FF8FB4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* LOGO AREA */
