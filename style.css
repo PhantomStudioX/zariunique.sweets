@@ -6,16 +6,22 @@ body {
   color: #333;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 header {
   padding: 20px;
   background: #FFC6DA;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: center;
+  gap: 15px;
   position: relative;
   z-index: 10;
+}
+
+/* ☰ MENU BUTTON */
+.menu-btn {
+  font-size: 26px;
+  cursor: pointer;
+  display: inline-block;
 }
 
 /* LOGO AREA */
@@ -40,37 +46,70 @@ header h1 {
   font-size: 22px;
 }
 
-/* NAVIGATION */
-.main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+/* ================= SIDEBAR ================= */
+#sidebar-toggle {
+  display: none;
 }
 
-/* NAV BUTTONS */
-.btn-nav {
-  padding: 6px 12px;
-  background: white;
-  border: 2px solid #FF8FB4;
-  border-radius: 18px;
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: #FFC6DA;
+  padding: 20px;
+  z-index: 10000;
+  transition: left 0.3s ease;
+}
+
+/* OPEN SIDEBAR */
+#sidebar-toggle:checked ~ .sidebar {
+  left: 0;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  font-size: 22px;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* SIDEBAR NAV */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-nav a {
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
+  padding: 10px 14px;
+  background: white;
+  border-radius: 16px;
+  border: 2px solid #FF8FB4;
   color: #333;
+  font-weight: 600;
+  text-align: center;
   transition: 0.2s ease;
 }
 
-.btn-nav:hover {
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
   background: #FF8FB4;
   color: white;
 }
 
-.btn-nav.active {
-  background: #FF8FB4;
-  color: white;
+/* PLACE ORDER BUTTON */
+.order-btn {
+  margin-top: 20px;
+  background: #ff4d88 !important;
+  color: white !important;
+  border-color: #ff4d88 !important;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -85,7 +124,7 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* PREVIEW */
+/* ================= PREVIEW ================= */
 .preview {
   padding: 40px 20px;
   position: relative;
@@ -114,7 +153,7 @@ header h1 {
   display: block;
 }
 
-/* PRODUCT PAGE HEADINGS FIX */
+/* ================= PRODUCT PAGE FIX ================= */
 .product-page {
   padding: 40px 20px;
   text-align: center;
@@ -127,7 +166,7 @@ header h1 {
   text-align: center;
 }
 
-/* PRODUCT CARD — NORMAL MODE */
+/* ================= PRODUCT CARD ================= */
 .card {
   background: white;
   border-radius: 18px;
@@ -164,17 +203,17 @@ body.christmas .card {
   color: #444;
 }
 
-/* 🎄 FALLING EFFECTS LAYER */
+/* ================= FALLING EFFECTS ================= */
 .snow-container {
   display: none;
   position: fixed;
   inset: 0;
   pointer-events: none;
   overflow: hidden;
-  z-index: 9999; /* 🔥 THIS WAS THE BLOCKER */
+  z-index: 9999;
 }
 
-/* 🎄 EFFECTS ON */
+/* EFFECTS ON */
 body.christmas .snow-container {
   display: block;
 }
@@ -187,15 +226,15 @@ body.christmas .snow-container {
   opacity: 0.85;
 }
 
-/* 🎂 DEFAULT FALL */
+/* DEFAULT FALL */
 body.christmas .snow-container span {
   animation-name: fall;
-  animation-duration: 12s; /* required */
+  animation-duration: 12s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
-/* 🧁 CUPCAKES PAGE — sprinkle drift */
+/* CUPCAKES PAGE DRIFT */
 .cupcakes-page.christmas .snow-container span {
   animation-name: drift;
   font-size: 14px;
@@ -217,7 +256,7 @@ body.christmas .snow-container span {
   to   { transform: translate(15px, 110vh); }
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer {
   text-align: center;
   padding: 20px;
