@@ -59,13 +59,30 @@ header h1 {
   height: 100%;
   background: #FFC6DA;
   padding: 20px;
-  z-index: 10000;
+  z-index: 10001;
   transition: left 0.3s ease;
 }
 
 /* OPEN SIDEBAR */
 #sidebar-toggle:checked ~ .sidebar {
   left: 0;
+}
+
+/* ✅ DARK OVERLAY (NEW) */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* SHOW OVERLAY */
+#sidebar-toggle:checked ~ .overlay {
+  opacity: 1;
+  pointer-events: all;
 }
 
 /* CLOSE BUTTON */
