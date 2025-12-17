@@ -26,10 +26,7 @@ header {
   transform: translateY(-50%);
   font-size: 26px;
   cursor: pointer;
-  padding: 10px 14px;
-  background: white;
-  border-radius: 14px;
-  border: 2px solid #FF8FB4;
+  border-radius:14px
 }
 
 /* LOGO AREA */
@@ -106,7 +103,7 @@ header h1 {
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 22px;
 }
 
 .sidebar-nav a {
