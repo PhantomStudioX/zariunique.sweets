@@ -103,6 +103,11 @@ header h1 {
 .sidebar-nav {
   display: flex;
   flex-direction: column;
+  gap: 32px;
+}
+
+.sidebar-nav label {
+  display: block;
 }
 
 /* ALL MENU BUTTONS (MATCH PLACE ORDER) */
