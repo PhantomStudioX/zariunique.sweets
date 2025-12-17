@@ -4,6 +4,9 @@ body {
   font-family: 'Playfair Display', serif;
   background: #ffffff;
   color: #333;
+
+  /* ✅ FIX LEFT PINK STRIP */
+  overflow-x: hidden;
 }
 
 /* ================= HEADER ================= */
@@ -64,9 +67,12 @@ header h1 {
   width: 260px;
   height: 100%;
   background: #FFC6DA;
-  padding: 20px;
+  padding: 24px 20px;
   z-index: 10001;
   transition: left 0.3s ease;
+
+  /* ✅ subtle depth */
+  box-shadow: 2px 0 14px rgba(0,0,0,0.15);
 }
 
 /* OPEN SIDEBAR */
@@ -74,7 +80,7 @@ header h1 {
   left: 0;
 }
 
-/* ✅ DARK OVERLAY (NEW) */
+/* DARK OVERLAY */
 .overlay {
   position: fixed;
   inset: 0;
@@ -85,7 +91,6 @@ header h1 {
   transition: opacity 0.3s ease;
 }
 
-/* SHOW OVERLAY */
 #sidebar-toggle:checked ~ .overlay {
   opacity: 1;
   pointer-events: all;
@@ -96,19 +101,21 @@ header h1 {
   font-size: 22px;
   cursor: pointer;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 /* SIDEBAR NAV */
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+
+  /* ✅ more breathing room */
+  gap: 14px;
 }
 
 .sidebar-nav a {
   text-decoration: none;
-  padding: 10px 14px;
+  padding: 12px 14px;
   background: white;
   border-radius: 16px;
   border: 2px solid #FF8FB4;
@@ -124,12 +131,17 @@ header h1 {
   color: white;
 }
 
-/* PLACE ORDER BUTTON */
+/* PLACE ORDER BUTTON (LIGHTER PINK) */
 .order-btn {
-  margin-top: 20px;
-  background: #ff4d88 !important;
-  color: white !important;
-  border-color: #ff4d88 !important;
+  margin-top: 26px;
+  background: #FFD1E3 !important;   /* ✅ lighter pink */
+  color: #333 !important;
+  border-color: #FF8FB4 !important;
+  font-weight: 700;
+}
+
+.order-btn:hover {
+  background: #FFB6CF !important;
 }
 
 /* ================= HERO ================= */
@@ -236,47 +248,8 @@ body.christmas .card {
   z-index: 9999;
 }
 
-/* EFFECTS ON */
 body.christmas .snow-container {
   display: block;
-}
-
-/* FALLING ITEMS */
-.snow-container span {
-  position: absolute;
-  top: -10%;
-  font-size: 18px;
-  opacity: 0.85;
-}
-
-/* DEFAULT FALL */
-body.christmas .snow-container span {
-  animation-name: fall;
-  animation-duration: 12s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-/* CUPCAKES PAGE DRIFT */
-.cupcakes-page.christmas .snow-container span {
-  animation-name: drift;
-  font-size: 14px;
-}
-
-.snow-container span:nth-child(1) { left: 10%; animation-duration: 10s; }
-.snow-container span:nth-child(2) { left: 30%; animation-duration: 14s; }
-.snow-container span:nth-child(3) { left: 50%; animation-duration: 12s; }
-.snow-container span:nth-child(4) { left: 70%; animation-duration: 16s; }
-.snow-container span:nth-child(5) { left: 90%; animation-duration: 11s; }
-
-@keyframes fall {
-  from { transform: translateY(0); }
-  to   { transform: translateY(110vh); }
-}
-
-@keyframes drift {
-  from { transform: translate(-15px, 0); }
-  to   { transform: translate(15px, 110vh); }
 }
 
 /* ================= FOOTER ================= */
