@@ -103,7 +103,7 @@ header h1 {
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 26px;
 }
 
 .sidebar-nav a {
