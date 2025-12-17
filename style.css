@@ -116,7 +116,7 @@ header h1 {
   font-weight: 700;
   text-align: center;
   transition: 0.2s ease;
-  margin-bottom: 14px;
+  margin-bottom: 22px;
 }
 
 .sidebar-nav a:hover,
@@ -156,6 +156,60 @@ header h1 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* ================= ORDER PAGE BOX ================= */
+.order-card {
+  max-width: 520px;
+  margin: 30px auto;
+  padding: 28px;
+  background: #fff;
+  border-radius: 22px;
+  border: 3px solid #FF8FB4;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.order-card ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+.order-card li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.order-step {
+  width: 28px;
+  height: 28px;
+  background: #FF8FB4;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ig-link {
+  color: #FF4F91;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ig-link:hover {
+  text-decoration: underline;
+}
+
+.order-note {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 600;
 }
 
 /* ================= MEDIA ================= */
