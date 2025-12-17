@@ -106,14 +106,15 @@ header h1 {
 
 .sidebar-nav a {
   text-decoration: none;
-  padding: 12px 14px;
-  background: white;
-  border-radius: 16px;
+  padding: 14px;
+  background: #FFD1E3;          /* same as Place an Order */
+  border-radius: 18px;
   border: 2px solid #FF8FB4;
   color: #333;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   transition: 0.2s ease;
+  margin-bottom: 14px;          /* spacing fix */
 }
 
 .sidebar-nav a:hover,
