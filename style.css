@@ -173,9 +173,14 @@ header h1 {
   padding: 26px;
   width: 240px;
   min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
-  border: 3px solid #FF8FB4;
   transition: 0.2s ease;
+  border: 3px solid #FF8FB4;
+
+  overflow: hidden; /* 🔥 FIX */
 }
 
 body.christmas .card {
