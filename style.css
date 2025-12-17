@@ -21,7 +21,7 @@ header {
 /* ☰ MENU BUTTON — TOP RIGHT */
 .menu-btn {
   position: absolute;
-  right: 16px;              /* ⬅️ MOVED FROM LEFT TO RIGHT */
+  right: 16px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 26px;
@@ -59,10 +59,11 @@ header h1 {
   display: none;
 }
 
+/* 🚨 IMPORTANT: RIGHT SIDEBAR ONLY */
 .sidebar {
   position: fixed;
   top: 0;
-  right: -260px;            /* ⬅️ SIDEBAR NOW HIDES ON RIGHT */
+  right: -260px;      /* HIDDEN OFF SCREEN (RIGHT) */
   width: 260px;
   height: 100%;
   background: #FFC6DA;
@@ -73,14 +74,14 @@ header h1 {
 
 /* OPEN SIDEBAR */
 #sidebar-toggle:checked ~ .sidebar {
-  right: 0;                /* ⬅️ SLIDES IN FROM RIGHT */
+  right: 0;           /* SLIDES IN FROM RIGHT */
 }
 
 /* OVERLAY */
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 10000;
   opacity: 0;
   pointer-events: none;
@@ -125,7 +126,7 @@ header h1 {
   color: white;
 }
 
-/* PLACE ORDER BUTTON — LIGHTER PINK */
+/* PLACE ORDER BUTTON — LIGHT PINK */
 .order-btn {
   margin-top: 26px;
   background: #FFD1E3 !important;
@@ -140,8 +141,6 @@ header h1 {
   padding: 60px 20px;
   background: #FF8FB4;
   color: white;
-  position: relative;
-  z-index: 5;
 }
 
 /* ================= PREVIEW ================= */
