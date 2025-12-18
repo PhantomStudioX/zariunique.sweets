@@ -123,6 +123,7 @@ header h1 {
   transition: 0.2s ease;
   display: block;
   width: 100%;
+  box-sizing: border-box;
 }
 
 /* Hover / Active */
