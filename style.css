@@ -5,6 +5,10 @@ body {
   background: #ffffff;
   color: #333;
   overflow-x: hidden;
+
+  min-height:100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ================= HEADER ================= */
@@ -292,10 +296,45 @@ body.christmas .snow-container {
   to { transform: translateY(110vh); }
 }
 
+/* DECORATIVE SWEET BACKGROUND */
+.sweet-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.sweet {
+  position: absolute;
+  font-size: 60px;
+  opacity: 0.15;
+}
+
+/* Individual placements (feel free to tweak) */
+.sweet.one {
+  top: 15%;
+  right: 10%;
+}
+
+.sweet.two {
+  top: 45%;
+  right: 5%;
+}
+
+.sweet.three {
+  bottom: 20%;
+  left: 8%;
+}
+
+.sweet.four {
+  bottom: 10%;
+  right: 25%;
+}
+
 /* ================= FOOTER ================= */
 footer {
   text-align: center;
   padding: 20px;
   background: #FFC6DA;
-  margin-top: 40px;
+  margin-top: auto;
 }
