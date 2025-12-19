@@ -6,7 +6,7 @@ body {
   color: #333;
   overflow-x: hidden;
 
-  min-height:100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -154,7 +154,6 @@ header h1 {
   overflow: hidden;
 }
 
-/* Keep hero content above decorations */
 .hero h2,
 .hero p {
   position: relative;
@@ -177,8 +176,19 @@ header h1 {
   border-radius: 50%;
   background-size: cover;
   background-position: center;
-  opacity: 0.22;
-  filter: blur(0.3px);
+  opacity: 0.9; /* ✅ clearer photos */
+  overflow: hidden;
+}
+
+/* Christmas decorative frame */
+.sweet::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/christmas-sweets-circle.jpg");
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
 }
 
 /* Dessert photo circles */
@@ -200,12 +210,19 @@ header h1 {
   background-image: url("images/cupcakes-circle.jpg");
 }
 
-/* 🎄 Christmas special circle */
+/* 🎄 Christmas special circle (extra glow) */
 body.christmas .sweet.four {
   bottom: 6%;
   right: 20%;
   background-image: url("images/christmas-sweets-circle.jpg");
-  opacity: 0.28;
+}
+
+/* ================= MOBILE SIZE FIX ================= */
+@media (max-width: 768px) {
+  .sweet {
+    width: 140px;
+    height: 140px;
+  }
 }
 
 /* ================= PREVIEW ================= */
@@ -242,49 +259,6 @@ body.christmas .sweet.four {
   border-radius: 22px;
   border: 3px solid #FF8FB4;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
-
-.order-card ol {
-  padding-left: 0;
-  list-style: none;
-}
-
-.order-card li {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-size: 16px;
-  margin-bottom: 16px;
-}
-
-.order-step {
-  width: 28px;
-  height: 28px;
-  background: #FF8FB4;
-  color: white;
-  border-radius: 50%;
-  font-size: 14px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.ig-link {
-  color: #FF4F91;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.ig-link:hover {
-  text-decoration: underline;
-}
-
-.order-note {
-  margin-top: 20px;
-  text-align: center;
-  font-weight: 600;
 }
 
 /* ================= MEDIA ================= */
