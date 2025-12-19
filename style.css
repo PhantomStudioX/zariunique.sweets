@@ -171,7 +171,7 @@ header h1 {
 
 /* ================= PHOTO CIRCLE BACKGROUND ================= */
 .sweet-bg {
-  position: fixed;
+  position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 2; /* ✅ FIX: ensure circles appear above hero overlay */
@@ -202,20 +202,18 @@ header h1 {
 
 /* Dessert photo circles */
 .sweet.one {
-  top: 10%;
-  right: -2%;
+  top: 12px;
+  right: 12px;
   background-image: url("images/cookies-circle.jpg");
 }
 
 .sweet.two {
-  top: 42%;
-  right: -40px;
-  background-image: url("images/cake-circle.jpg");
+  display:none;
 }
 
 .sweet.three {
-  bottom: 18%;
-  left: -600px;
+  bottom: 12px;
+  left: 12px;
   background-image: url("images/cupcakes-circle.jpg");
 }
 
