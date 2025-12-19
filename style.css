@@ -215,7 +215,7 @@ header h1 {
 
 .sweet.three {
   bottom: 18%;
-  left: -200px;
+  left: -600px;
   background-image: url("images/cupcakes-circle.jpg");
 }
 
@@ -227,7 +227,7 @@ header h1 {
   }
 
   .sweet.one {
-    top: 24%;
+    top: 30%;
     right: -20px;
   }
 
@@ -238,7 +238,7 @@ header h1 {
 
   .sweet.three {
     bottom: 8%;
-    left: -300px;
+    left: 600px;
   }
 }
 
