@@ -107,7 +107,7 @@ header h1 {
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* ✅ controls spacing cleanly */
+  gap: 10px;
 }
 
 .sidebar-nav label {
@@ -137,7 +137,7 @@ header h1 {
   color: white;
 }
 
-/* PLACE ORDER BUTTON — subtle separation */
+/* PLACE ORDER BUTTON */
 .sidebar-nav a.order-btn {
   margin-top: 14px;
   background: #FF9FC2;
@@ -146,10 +146,66 @@ header h1 {
 
 /* ================= HERO ================= */
 .hero {
+  position: relative;
   text-align: center;
-  padding: 60px 20px;
-  background: #FF8FB4;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #FFE4EF, #FF9FC2);
   color: white;
+  overflow: hidden;
+}
+
+/* Keep hero content above decorations */
+.hero h2,
+.hero p {
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= PHOTO CIRCLE BACKGROUND ================= */
+.sweet-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Base circle style */
+.sweet {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.22;
+  filter: blur(0.3px);
+}
+
+/* Dessert photo circles */
+.sweet.one {
+  top: 12%;
+  right: 6%;
+  background-image: url("images/cookies-circle.jpg");
+}
+
+.sweet.two {
+  top: 42%;
+  right: -40px;
+  background-image: url("images/cake-circle.jpg");
+}
+
+.sweet.three {
+  bottom: 18%;
+  left: -30px;
+  background-image: url("images/cupcakes-circle.jpg");
+}
+
+/* 🎄 Christmas special circle */
+body.christmas .sweet.four {
+  bottom: 6%;
+  right: 20%;
+  background-image: url("images/christmas-sweets-circle.jpg");
+  opacity: 0.28;
 }
 
 /* ================= PREVIEW ================= */
@@ -294,41 +350,6 @@ body.christmas .snow-container {
 
 @keyframes fall {
   to { transform: translateY(110vh); }
-}
-
-/* DECORATIVE SWEET BACKGROUND */
-.sweet-bg {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.sweet {
-  position: absolute;
-  font-size: 60px;
-  opacity: 0.15;
-}
-
-/* Individual placements (feel free to tweak) */
-.sweet.one {
-  top: 15%;
-  right: 10%;
-}
-
-.sweet.two {
-  top: 45%;
-  right: 5%;
-}
-
-.sweet.three {
-  bottom: 20%;
-  left: 8%;
-}
-
-.sweet.four {
-  bottom: 10%;
-  right: 25%;
 }
 
 /* ================= FOOTER ================= */
