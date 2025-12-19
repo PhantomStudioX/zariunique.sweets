@@ -110,11 +110,6 @@ header h1 {
   gap: 10px;
 }
 
-.sidebar-nav label {
-  display: block;
-}
-
-/* ALL MENU BUTTONS */
 .sidebar-nav a {
   text-decoration: none;
   padding: 10px 14px;
@@ -130,14 +125,12 @@ header h1 {
   box-sizing: border-box;
 }
 
-/* Hover / Active */
 .sidebar-nav a:hover,
 .sidebar-nav a.active {
   background: #FF8FB4;
   color: white;
 }
 
-/* PLACE ORDER BUTTON */
 .sidebar-nav a.order-btn {
   margin-top: 14px;
   background: #FF9FC2;
@@ -154,7 +147,6 @@ header h1 {
   overflow: hidden;
 }
 
-/* Soft strawberry-style overlay */
 .hero::before {
   content: "";
   position: absolute;
@@ -174,10 +166,9 @@ header h1 {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  z-index: 2; /* ✅ FIX: ensure circles appear above hero overlay */
+  z-index: 2;
 }
 
-/* Base circle style */
 .sweet {
   position: absolute;
   width: 100px;
@@ -189,7 +180,6 @@ header h1 {
   overflow: hidden;
 }
 
-/* Christmas decorative frame */
 .sweet::after {
   content: "";
   position: absolute;
@@ -200,7 +190,7 @@ header h1 {
   pointer-events: none;
 }
 
-/* Dessert photo circles */
+/* FINAL DESIRED POSITIONS */
 .sweet.one {
   top: 12px;
   right: 12px;
@@ -208,7 +198,7 @@ header h1 {
 }
 
 .sweet.two {
-  display:none;
+  display: none;
 }
 
 .sweet.three {
@@ -217,26 +207,11 @@ header h1 {
   background-image: url("images/cupcakes-circle.jpg");
 }
 
-/* ================= MOBILE SIZE + POSITION FIX ================= */
+/* ================= MOBILE SIZE ONLY ================= */
 @media (max-width: 768px) {
   .sweet {
-    width: 90px;
-    height: 90px;
-  }
-
-  .sweet.one {
-    top: 40%;
-    right: -20px;
-  }
-
-  .sweet.two {
-    top: 55%;
-    right: -60px;
-  }
-
-  .sweet.three {
-    bottom: 8%;
-    left: -200px;
+    width: 85px;
+    height: 85px;
   }
 }
 
@@ -245,107 +220,6 @@ header h1 {
   .sweet.three {
     display: none;
   }
-}
-
-/* ================= PREVIEW ================= */
-.preview {
-  padding: 40px 20px;
-}
-
-.center-title {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.product-grid {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-/* ================= PRODUCT PAGE FIX ================= */
-.product-page h2,
-.product-page .sub {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ================= ORDER PAGE BOX ================= */
-.order-card {
-  max-width: 520px;
-  margin: 30px auto;
-  padding: 28px;
-  background: #fff;
-  border-radius: 22px;
-  border: 3px solid #FF8FB4;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
-
-/* ================= MEDIA ================= */
-.product-video,
-.card img,
-.card video {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-  flex-shrink: 0;
-}
-
-/* ================= PRODUCT CARD ================= */
-.card {
-  background: white;
-  border-radius: 18px;
-  padding: 26px;
-  width: 240px;
-  min-height: 380px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  transition: 0.2s ease;
-  border: 3px solid #FF8FB4;
-  overflow: hidden;
-}
-
-/* CHRISTMAS BORDER */
-body.christmas .card {
-  border: 18px solid transparent;
-  border-image: url("images/card-border.png") 60 round;
-}
-
-/* ================= FALLING EFFECTS ================= */
-.snow-container {
-  display: none;
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9999;
-}
-
-body.christmas .snow-container {
-  display: block;
-}
-
-.snow-container span {
-  position: absolute;
-  top: -10%;
-  font-size: 18px;
-  opacity: 0.85;
-  animation: fall 12s linear infinite;
-}
-
-.snow-container span:nth-child(1) { left: 10%; animation-duration: 10s; }
-.snow-container span:nth-child(2) { left: 30%; animation-duration: 14s; }
-.snow-container span:nth-child(3) { left: 50%; animation-duration: 12s; }
-.snow-container span:nth-child(4) { left: 70%; animation-duration: 16s; }
-.snow-container span:nth-child(5) { left: 90%; animation-duration: 11s; }
-
-@keyframes fall {
-  to { transform: translateY(110vh); }
 }
 
 /* ================= FOOTER ================= */
