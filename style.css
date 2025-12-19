@@ -227,7 +227,7 @@ header h1 {
   }
 
   .sweet.one {
-    top: 30%;
+    top: 40%;
     right: -20px;
   }
 
@@ -238,7 +238,7 @@ header h1 {
 
   .sweet.three {
     bottom: 8%;
-    left: 600px;
+    left: -200px;
   }
 }
 
