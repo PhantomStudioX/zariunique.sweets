@@ -203,7 +203,7 @@ header h1 {
 /* Dessert photo circles */
 .sweet.one {
   top: 12%;
-  right: 6%;
+  right: -10%;
   background-image: url("images/cookies-circle.jpg");
 }
 
@@ -215,7 +215,7 @@ header h1 {
 
 .sweet.three {
   bottom: 18%;
-  left: -30px;
+  left: -120px;
   background-image: url("images/cupcakes-circle.jpg");
 }
 
@@ -228,7 +228,7 @@ header h1 {
 
   .sweet.one {
     top: 22%;
-    right: -20px;
+    right: -30px;
   }
 
   .sweet.two {
@@ -238,7 +238,7 @@ header h1 {
 
   .sweet.three {
     bottom: 8%;
-    left: -50px;
+    left: -140px;
   }
 }
 
