@@ -6,7 +6,7 @@ body {
   color: #333;
   overflow-x: hidden;
 
-  min-height: 100vh;
+  min-height:100vh;
   display: flex;
   flex-direction: column;
 }
@@ -95,131 +95,116 @@ header h1 {
   pointer-events: all;
 }
 
-/* CLOSE BUTTON */
-.close-btn {
-  font-size: 22px;
-  cursor: pointer;
-  display: block;
-  margin-bottom: 20px;
-}
-
-/* SIDEBAR NAV */
-.sidebar-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.sidebar-nav a {
-  text-decoration: none;
-  padding: 10px 14px;
-  background: #FFD1E3;
-  border-radius: 18px;
-  border: 2px solid #FF8FB4;
-  color: #333;
-  font-weight: 700;
-  text-align: center;
-  transition: 0.2s ease;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.sidebar-nav a:hover,
-.sidebar-nav a.active {
-  background: #FF8FB4;
-  color: white;
-}
-
-.sidebar-nav a.order-btn {
-  margin-top: 14px;
-  background: #FF9FC2;
-  color: white;
-}
-
 /* ================= HERO ================= */
 .hero {
-  position: relative;
+  position: relative; /* ✅ FIX: anchor sweet background */
   text-align: center;
-  padding: 70px 20px;
-  background: linear-gradient(135deg, #FFE4EF, #FF9FC2);
+  padding: 60px 20px;
+  background: #FF8FB4;
   color: white;
   overflow: hidden;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
+/* ================= DECORATIVE SWEET BACKGROUND ================= */
+.sweet-bg {
+  position: absolute; /* ✅ FIX: attach to hero */
   inset: 0;
-  background: rgba(255, 143, 180, 0.35);
-  z-index: 1;
+  pointer-events: none;
+  z-index: 1; /* behind hero text */
 }
 
+.sweet {
+  position: absolute;
+  font-size: 60px;
+  opacity: 0.15;
+}
+
+/* Individual placements */
+.sweet.one {
+  top: 15%;
+  right: 10%;
+}
+
+.sweet.two {
+  top: 45%;
+  right: 5%;
+}
+
+.sweet.three {
+  bottom: 20%;
+  left: 8%;
+}
+
+.sweet.four {
+  bottom: 10%;
+  right: 25%;
+}
+
+/* Ensure hero text stays above sweets */
+.hero h1,
 .hero h2,
 .hero p {
   position: relative;
   z-index: 2;
 }
 
-/* ================= PHOTO CIRCLE BACKGROUND ================= */
-.sweet-bg {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 2;
+/* ================= PREVIEW ================= */
+.preview {
+  padding: 40px 20px;
 }
 
-.sweet {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.65;
-  overflow: hidden;
+.center-title {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.sweet::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("images/christmas-sweets-circle.jpg");
-  background-size: cover;
-  background-position: center;
-  pointer-events: none;
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
-/* FINAL DESIRED POSITIONS */
-.sweet.one {
-  top: 12px;
-  right: 12px;
-  background-image: url("images/cookies-circle.jpg");
+/* ================= ORDER PAGE BOX ================= */
+.order-card {
+  max-width: 520px;
+  margin: 30px auto;
+  padding: 28px;
+  background: #fff;
+  border-radius: 22px;
+  border: 3px solid #FF8FB4;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.sweet.two {
+/* ================= PRODUCT CARD ================= */
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 26px;
+  width: 240px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border: 3px solid #FF8FB4;
+}
+
+/* ================= FALLING EFFECTS ================= */
+.snow-container {
   display: none;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
 }
 
-.sweet.three {
-  bottom: 12px;
-  left: 12px;
-  background-image: url("images/cupcakes-circle.jpg");
+body.christmas .snow-container {
+  display: block;
 }
 
-/* ================= MOBILE SIZE ONLY ================= */
-@media (max-width: 768px) {
-  .sweet {
-    width: 85px;
-    height: 85px;
-  }
-}
-
-/* Extra small phones */
-@media (max-width: 420px) {
-  .sweet.three {
-    display: none;
-  }
+@keyframes fall {
+  to { transform: translateY(110vh); }
 }
 
 /* ================= FOOTER ================= */
