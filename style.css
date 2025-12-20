@@ -347,18 +347,18 @@ body.christmas .snow-container {
   z-index: 4;
 }
 
-/* Cookie circle */
+/* Cupcake circle */
 .circle-cupcake {
   top: 42%;
   left: 0%;
   background-image: url("images/cupcakes-circle.jpg");
 }
 
-/* Cupcake circle */
-.circle-cupcake {
-  bottom: 10%;
-  left: 5%;
-  background-image: url("images/cupcakes-circle.jpg");
+/* Cookie circle */
+.circle-cookie {
+  top: 30%;
+  right: 9%;
+  background-image: url("images/cookies-circle.jpg");
 }
 
 /* Christmas border overlay */
