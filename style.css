@@ -355,7 +355,7 @@ body.christmas .snow-container {
 
 /* Cupcake circle */
 .circle-cupcake {
-  bottom: 15%;
+  bottom: 10%;
   left: 5%;
   background-image: url("images/cupcakes-circle.jpg");
 }
