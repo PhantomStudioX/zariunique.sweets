@@ -335,7 +335,7 @@ body.christmas .snow-container {
 
 /* Base circle image */
 .circle-img {
-  position: absolute;
+  position: fixed;
   width: 110px;
   height: 110px;
   border-radius: 50%;
@@ -348,7 +348,7 @@ body.christmas .snow-container {
 
 /* Cookie circle */
 .circle-cookie {
-  top: 18%;
+  top: 22%;
   right: 8%;
   background-image: url("images/cookies-circle.jpg");
 }
@@ -365,6 +365,7 @@ body.christmas .circle-img::after {
   content: "";
   position: absolute;
   inset: 0;
+  z-index:3;
   background-image: url("images/christmas-sweet-circle.jpg");
   background-size: cover;
   background-position: center;
