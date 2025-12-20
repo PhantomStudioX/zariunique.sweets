@@ -312,8 +312,8 @@ body.christmas .snow-container {
 
 /* Individual placements (feel free to tweak) */
 .sweet.one {
-  top: 15%;
-  right: 10%;
+  top: 5%;
+  right: -10%;
 }
 
 .sweet.two {
@@ -322,7 +322,7 @@ body.christmas .snow-container {
 }
 
 .sweet.three {
-  bottom: 20%;
+  bottom: 15%;
   left: 8%;
 }
 
@@ -348,8 +348,8 @@ body.christmas .snow-container {
 
 /* Cookie circle */
 .circle-cookie {
-  top: 22%;
-  right: 8%;
+  top: 30%;
+  right: 9%;
   background-image: url("images/cookies-circle.jpg");
 }
 
