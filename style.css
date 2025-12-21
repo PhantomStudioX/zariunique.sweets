@@ -356,7 +356,7 @@ body.christmas .snow-container {
 
 /* Cookie circle */
 .circle-cookie {
-  top: 35%;
+  top: 50%;
   right: 9%;
   background-image: url("images/cookies-circle.jpg");
 }
