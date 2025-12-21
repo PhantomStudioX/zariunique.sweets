@@ -382,12 +382,12 @@ body.christmas .circle-img::after {
   }
 
   .circle-cookie {
-    top: 15%;        /* Higher the number lower it goes, lower the number higher it goes*/
+    top: 16%;        /* Higher the number lower it goes, lower the number higher it goes*/
     right: 3%;
   }
 
   .circle-cupcake {
-    top: 45%;
+    top: 44%;
     left: -2%;
   }
 }
