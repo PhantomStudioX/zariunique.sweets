@@ -349,14 +349,14 @@ body.christmas .snow-container {
 
 /* Cupcake circle */
 .circle-cupcake {
-  top: 42%;
+  top: 50%;          /* Higher the number lower it goes, lower the number higher it goes*/
   left: 0%;
   background-image: url("images/cupcakes-circle.jpg");
 }
 
 /* Cookie circle */
 .circle-cookie {
-  top: 30%;
+  top: 35%;
   right: 9%;
   background-image: url("images/cookies-circle.jpg");
 }
