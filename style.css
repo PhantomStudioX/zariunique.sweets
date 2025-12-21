@@ -382,13 +382,13 @@ body.christmas .circle-img::after {
   }
 
   .circle-cookie {
-    top: 30%;
-    right: 5%;
+    top: 35%;
+    right: 6%;
   }
 
   .circle-cupcake {
-    top: 40%;
-    left: -5%;
+    top: 30%;
+    left: -4%;
   }
 }
 
