@@ -392,6 +392,62 @@ body.christmas .circle-img::after {
   }
 }
 
+/* ================= FEATURED SECTION ================= */
+
+.featured-section {
+  padding: 60px 20px;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #FFF0F6 45%,
+    #ffffff 100%
+  );
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+/* FLOATING QUOTE */
+.quote-card {
+  max-width: 520px;
+  margin: 0 auto 40px;
+  padding: 26px;
+  background: #ffffff;
+  border-radius: 26px;
+  border: 3px solid #FF8FB4;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* FEATURED PRODUCT */
+.featured-card {
+  max-width: 300px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  border: 3px solid #FF8FB4;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.featured-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.featured-card h3 {
+  margin: 10px 0 6px;
+}
+
+.featured-card p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
 /* ================= FOOTER ================= */
 footer {
   text-align: center;
