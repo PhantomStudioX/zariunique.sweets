@@ -271,6 +271,11 @@ body.valentines .card {
   border-image: url("images/valentine-card-border.png") 60 round;
 }
 
+body.valentines .card {
+  width: 250px;      /* card size */
+  padding: 18px;     /* space inside border */
+}
+
 /* ================= FALLING EFFECTS ================= */
 .snow-container {
   display: none;
