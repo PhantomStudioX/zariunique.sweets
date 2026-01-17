@@ -475,6 +475,15 @@ body.valentines .featured-card {
   opacity: 0.85;
 }
 
+/* ================= VALENTINE SCRIPT FONT ================= delete after v day */
+body.valentines h1,
+body.valentines h2,
+body.valentines .valentine-title {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
 /* ================= FOOTER ================= */
 footer {
   text-align: center;
