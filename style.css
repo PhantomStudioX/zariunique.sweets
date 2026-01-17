@@ -265,6 +265,12 @@ body.christmas .card {
   border-image: url("images/card-border.png") 60 round;
 }
 
+/* VALENTINES BORDER — PRODUCT CARDS */
+body.valentines .card {
+  border: 18px solid transparent;
+  border-image: url("images/valentine-card-border.png") 60 round;
+}
+
 /* ================= FALLING EFFECTS ================= */
 .snow-container {
   display: none;
@@ -275,6 +281,10 @@ body.christmas .card {
 }
 
 body.christmas .snow-container {
+  display: block;
+}
+
+body.valentines .snow-container {
   display: block;
 }
 
@@ -420,6 +430,12 @@ body.christmas .circle-img::after {
   font-style: italic;
 }
 
+/* VALENTINES BORDER — QUOTE */
+body.valentines .quote-card {
+  border: 18px solid transparent;
+  border-image: url("images/valentine-card-border.png") 60 round;
+}
+
 /* FEATURED PRODUCT */
 .featured-card {
   max-width: 300px;
@@ -429,6 +445,12 @@ body.christmas .circle-img::after {
   padding: 22px;
   border: 3px solid #FF8FB4;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* VALENTINES BORDER — FEATURED CARD */
+body.valentines .featured-card {
+  border: 18px solid transparent;
+  border-image: url("images/valentine-card-border.png") 60 round;
 }
 
 .featured-card img {
