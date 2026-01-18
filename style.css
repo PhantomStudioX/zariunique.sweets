@@ -483,3 +483,12 @@ footer {
   margin-top: 40px;
   margin-top: auto;
 }
+
+/* ================= VALENTINE SCRIPT FONT ================= */
+body.valentines h1,
+body.valentines h2,
+body.valentines .valentine-title {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
