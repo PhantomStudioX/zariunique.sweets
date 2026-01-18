@@ -512,3 +512,14 @@ body.valentines .valentine-title {
   margin-top: 10px;
   font-size: 14px;
 }
+
+@media (max-width: 600px) {
+  .valentine-card p {
+    margin: 6px 0;
+    line-height: 1.35;
+  }
+
+  .valentine-card h2 {
+    marging: 10px 0 8px;
+  }
+}
